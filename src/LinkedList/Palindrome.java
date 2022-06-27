@@ -13,7 +13,6 @@ public class Palindrome {
     boolean isPalindrome(Node head)
     {
         //Your code here
-
         Node mid=getMid(head);
         Node rev=reverse(mid);
 

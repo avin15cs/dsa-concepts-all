@@ -3,6 +3,8 @@ package Tree.GenericTree;
 import java.util.ArrayList;
 import java.util.Stack;
 
+import static Tree.GenericTree.RemoveLeaves.*;
+
 public class CreateTree {
     public static class Node {
         int data;
@@ -30,19 +32,23 @@ public class CreateTree {
             }
         }
         display(root);
-        int size=SizeOfGenericTree.size(root);
-        System.out.println("Size of Generic Tree: "+ size);
-
-        int height=HeightOfGenericTree.height(root);
-        System.out.println("Height of Generic Tree: "+height);
+//        int size=SizeOfGenericTree.size(root);
+//        System.out.println("Size of Generic Tree: "+ size);
+//
+//        int height=HeightOfGenericTree.height(root);
+//        System.out.println("Height of Generic Tree: "+height);
 
 //        TraversalInGenericTree.traversals(root);
 //        LevelOrderTraversal.levelOrderLineWise(root);
 //        LevelOrderTraversal.levelOrderLinewiseZZ(root);
 //        MirrorOfTree.mirror(root);
-        RemoveLeaves.removeLeaves(root);
+//        removeLeaves(root);
+
+        System.out.println("Output: ");
+        LinearizeGenericTree.linearize(root);
         display(root);
     }
+
 
     //d(10) -> 10 will print itself and its family
     //d(20), d(30), d(40) will print themselves and their families

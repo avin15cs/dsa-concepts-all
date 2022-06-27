@@ -10,7 +10,7 @@ public class JosephusProblem {
         for(int i=0;i<n;i++)
             arrayList.add(i+1);
         solve(arrayList,n,k-1,0);
-        System.out.println(ans);
+        System.out.println(arrayList.get(0));
     }
     static void solve(ArrayList<Integer> arrayList,  int n, int k, int index){
         if(arrayList.size()==1) {

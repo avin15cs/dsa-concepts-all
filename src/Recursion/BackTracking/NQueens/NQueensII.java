@@ -10,6 +10,7 @@ public class NQueensII {
         int count=printNQueens(chess,0);
         System.out.println("Count= "+count);
     }
+
     static int printNQueens(int[][] chess,int row){
         if(row==chess.length){
             display(chess);
@@ -25,6 +26,7 @@ public class NQueensII {
         }
         return count;
     }
+
     static boolean isSafe(int[][] chess, int row, int col){
         //checking Up
         for(int i=row-1;i>=0;i--){
@@ -43,6 +45,7 @@ public class NQueensII {
         }
         return true;
     }
+
     static void display(int[][] chess){
         for(int i=0;i<chess.length;i++){
             for(int j=0;j<chess.length;j++){
@@ -55,4 +58,5 @@ public class NQueensII {
         }
         System.out.println();
     }
+
 }

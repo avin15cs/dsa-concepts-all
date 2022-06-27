@@ -5,7 +5,6 @@ public class Interfaces implements Cars, Person{
 
     }
 
-
     //implements keyword is used for implementing interfaces
     @Override
     public void stop() {
@@ -24,6 +23,7 @@ interface Cars{
     default void start(){
         System.out.println("Car Started");
     }
+
     //normal method-hence only declared and not defined
     //any method(other than default method) written in interface is abstract and hence cant be defined
     void stop();

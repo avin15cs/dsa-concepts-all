@@ -22,6 +22,9 @@ public class Inheritance1 {
         //if you click on s3.walk() it will go to parent in compile time, but in runtime it will print Child class Developer function walk
         s3.walk();
         d1.walk();
+
+        Staff s4=new Developer("Avinash",25);
+        s4.walk();
     }
 }
 

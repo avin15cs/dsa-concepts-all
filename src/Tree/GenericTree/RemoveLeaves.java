@@ -1,32 +1,20 @@
 package Tree.GenericTree;
 
+import java.util.ArrayList;
+
 public class RemoveLeaves {
-//    public static CreateTree.Node removeLeaves(CreateTree.Node node) {
-//        // write your code here
-//        if(node==null)
-//            return null;
-//
-//        if(node.children.size()==0){
-//            return null;
-//        }
-//
-//        for(int i = 0;i<node.children.size();i++){
-//            node.children.set(node.children.get(i),removeLeaves(node.children.get(i)));
-//        }
-//        return node;
-//    }
-    public static void removeLeaves(CreateTree.Node node) {
-        // write your code here
-        if (node == null)
-            return;
 
-        if (node.children.size() == 0) {
-            node = null;
-            return;
+    static void removeLeaves(CreateTree.Node node){
+
+        for(int i = node.children.size()-1;i>=0;i--){
+            CreateTree.Node child=node.children.get(i);
+            if(child.children.size()==0)
+                node.children.remove(child);
         }
 
-        for (CreateTree.Node child : node.children) {
+        for(CreateTree.Node child: node.children)
             removeLeaves(child);
-        }
+
+
     }
 }

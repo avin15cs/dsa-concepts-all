@@ -15,7 +15,7 @@ public class CoinChangeMaximumWays {
         }
     }
     public static void main(String[] args) {
-        int ans=change(5,new int[]{1,2,5});
+        int ans=change(4,new int[]{1,2,3});
         System.out.println(ans);
     }
     public static int change(int amount, int[] coins) {

@@ -17,11 +17,11 @@ public class MainClass {
         System.out.println(p1.age+" "+p1.name);
         System.out.println(p2.age+" "+p2.name);
 
-        //accessing behaviour
+        //Accessing behaviour
         p1.walk();
         p2.eat();
 
-        //Achieveing compile time polymorphism- click on any walk() function it will  land to its definition.
+        //Achieving compile time polymorphism- click on any walk() function it will  land to its definition.
         p2.walk();
         p2.walk(5000);
     }

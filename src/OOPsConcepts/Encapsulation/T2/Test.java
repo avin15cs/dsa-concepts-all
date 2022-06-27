@@ -7,7 +7,6 @@ public class Test {
         Encapsulation encapsulation =  new Encapsulation();
         //public method can be called easily.
         encapsulation.doWork();
-
         //default method(here doWalk() method) is not visible from other packages, only visible within package
 //        encapsulation.doWalk();
 

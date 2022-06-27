@@ -7,8 +7,6 @@ public class Abstraction {
         //Since car is a concept, no point of making an object, lets make it abstract
         //Now car cannot be instantiated
 //        Car car =new Car();
-
-
     }
 }
 
@@ -30,7 +28,7 @@ abstract class Car{
 
 class Audi extends Car{
 
-    //start() is a abstract method hence it needs to declared in child class
+    //start() is a abstract method hence it needs to be declared in child class
     @Override
     void start() {
         System.out.println("Audi is starting");

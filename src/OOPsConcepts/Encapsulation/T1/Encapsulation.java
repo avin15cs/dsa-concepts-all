@@ -9,9 +9,9 @@ public class Encapsulation {
         Laptop l1 = new Laptop();
 
         //lets encapsulate variable price
-        //l1.price=23;
+//        l1.price=23;
 
-        //Achieve encapsulation using getters and Setters
+//Achieve encapsulation using getters and Setters
         l1.setPrice(23);
         int price=l1.getPrice();
         System.out.println(price);
@@ -42,6 +42,7 @@ class Laptop{
     int rom;
     private int price;
     public void setPrice(int price){
+
         //isUser an Admin
         boolean isAdmin = false;
         if(!isAdmin)
